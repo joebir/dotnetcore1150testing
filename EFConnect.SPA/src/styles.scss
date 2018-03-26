@@ -1,0 +1,26 @@
+$red: #D9514E;
+$cyan: #86BAD3;
+$text: #3e3e3e;
+$theme-colors: ( "primary": $red, "secondary": $cyan);
+@import "~bootstrap/scss/bootstrap";
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+// bootstrap overrides
+body {
+  color: $text;
+}
+
+.btn {
+  font-weight: bold;
+  color: white;
+}
+
+.btn-secondary.disabled[_ngcontent-c1],
+.btn-secondary[_ngcontent-c1]:disabled {
+  color: white;
+  cursor: disabled;
+}
+
+#navbarDropdown {
+  color: white;
+}

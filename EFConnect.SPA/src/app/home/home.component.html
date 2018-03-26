@@ -1,0 +1,18 @@
+<div class="home-container">
+  <h1>
+    Connect with other students!
+  </h1>
+  <p class="lead">Come on in! All you have to do is sign up!</p>
+  <div class="text-center">
+    <button class="btn btn-primary btn-lg">Register</button>
+    <button class="btn btn-info btn-lg">Learn More</button>
+  </div>
+</div>
+
+<div *ngIf="registerMode" class="container">
+  <div class="justify-content-md-center">
+      <app-register></app-register>
+  </div>
+</div>
+
+<button class="btn btn-primary btn-lg" (click)="registerToggle()">Register</button>
